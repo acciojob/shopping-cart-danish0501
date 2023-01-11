@@ -7,19 +7,30 @@
     <title>Shopping Cart</title>
 </head>
 <body>
-    <input type="text" placeholder="Item name here" id="item-name-input">
-    <input type="number" placeholder="Price here" id="item-price-input">
-    <button id="add">Add</button>
-
-
-    <table id="table">
-        <tr>
-            <th>Item</th>
+    
+        <table id="table">
+          <tr>
+            <th>Item Name</th>
+            <!-- <th>Quantity</th> -->
             <th>Price</th>
-        </tr>
-    </table>
-
-    <h3>Grand Total : <span id="total">0</span></h3>
-<script src="script.js"></script>
+            <th>Total</th>
+          </tr>
+          <tr>
+            <form id="myinputs">
+              <td>
+                <input type="text" id="item-name-input" placeholder="Name" />
+              </td>
+              <!-- <td><input type="text" id="item-qty-input" placeholder="Qty" /></td> -->
+              <td>
+                <input type="text" id="item-price-input" placeholder="Price" />
+              </td>
+            </form>
+            <td><button id="add" onclick="addData();">Add</button></td>
+          </tr>
+        </table>
+        <!-- <div id="total">Total Ammount is 0 $</div> -->
+        <h3>Grand Total : <span id="total">0</span></h3>
+     
+<script src="./script.js"></script>
 </body>
 </html>
